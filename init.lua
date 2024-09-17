@@ -448,6 +448,19 @@ require('lazy').setup({
     end,
   },
 
+  -- Installign Template here.
+  {
+    'glepnir/template.nvim',
+    cmd = { 'Template', 'TemProject' },
+    config = function()
+      require('template').setup {
+        temp_dir = '~/.config/nvim/templates/',
+        author = 'Aidan Cruickshank',
+        email = 'aidangcruickshank@gmail.com',
+      }
+    end,
+  },
+
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
